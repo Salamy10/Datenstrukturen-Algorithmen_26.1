@@ -22,7 +22,7 @@ public class Main {
     	} else if(input == 1){
     		return 1;
     	}
-		return fibo_rec(input-1) + fibo_rec(input-2);
+		return fibo_rec(input-1) + fibo_rec(input-2);	//bro wtf
     	
     }
 
