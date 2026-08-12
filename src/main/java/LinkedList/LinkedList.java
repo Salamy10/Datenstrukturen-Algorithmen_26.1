@@ -13,7 +13,18 @@ public class LinkedList<E> {
      */
     public int size() {
         // TODO: Implementieren
-        return 0;
+
+    	/*Lösung*/
+    	int count = 0;
+    	Node<E> current = head;
+    	
+    	while(current != null) {
+    		count++;
+    		current = current.next;
+    	}
+    	
+        return count;
+        
     }
 
     /**
@@ -21,7 +32,18 @@ public class LinkedList<E> {
      */
     public boolean contains(E element) {
         // TODO: Implementieren
-        return false;
+
+    	Node<E> current = head;
+    	
+    	/*Lösung*/
+    	while(current != null) {
+    		if (current.data.equals(element)){
+    			return true;
+    		}
+    		
+    		current = current.next;
+    	}
+    	return false;
     }
 
     /**
@@ -29,6 +51,13 @@ public class LinkedList<E> {
      */
     public void addFirst(E element) {
         // TODO: Implementieren
+    	
+    	/*Lösung*/
+    	Node<E> newNode = new Node<>(element);
+    	
+    	newNode.next = head;
+    	head = newNode;
+    	
     }
 
     /**
@@ -36,6 +65,22 @@ public class LinkedList<E> {
      */
     public void addLast(E element) {
         // TODO: Implementieren
+
+    	Node<E> newNode = new Node<>(element);
+
+    	/*Lösung*/
+    	if (head == null) {
+    		head = newNode;
+    		return;
+    	}
+    	
+    	Node<E> current = head;
+    	
+    	while (current.next != null) {
+    		current = current.next;
+    	}
+    	
+    	current.next = newNode;   	
     }
 
     /**

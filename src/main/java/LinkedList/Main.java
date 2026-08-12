@@ -19,5 +19,6 @@ public class Main {
 
         System.out.println("Enthält 20? " + list.contains(20));
         System.out.println("Enthält 99? " + list.contains(99));
+
     }
 }
