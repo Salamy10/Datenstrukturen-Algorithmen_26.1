@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Let us test your Code:");
 
 
-        Tree<Integer> tree = new Tree<>();
+        Tree tree = new Tree();
 
         tree.add(50);
         tree.add(30);

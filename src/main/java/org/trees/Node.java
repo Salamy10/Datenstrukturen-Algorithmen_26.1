@@ -2,11 +2,11 @@ package org.trees;
 
 public class Node<E> {
 
-    E data;
-    Node<E> left;
-    Node<E> right;
+    int data;
+    Node left;
+    Node right;
 
-    public Node(E data) {
+    public Node(int data) {
         this.data = data;
         this.left = null;
         this.right = null;
