@@ -36,6 +36,7 @@ public class JumpSearchDemo {
         
 
         System.out.println("Array: " + Arrays.toString(array));
+        System.out.print("Bitte zu suchende Zahl eingeben: ");
         int gesucht = s.nextInt();
         int index = jumpSearch(array, gesucht);
         System.out.println("Gesuchter Wert: " + gesucht);
