@@ -1,4 +1,4 @@
-package suchalgo;
+package probeklausur;
 
 import java.util.Arrays;
 import java.util.Scanner;
