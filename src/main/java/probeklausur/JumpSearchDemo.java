@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class JumpSearchDemo {
 
+	
+	/*Suchalgo*/
     public static int jumpSearch(int[] array, int gesucht) {
         int n = array.length;
         if (n == 0) return -1;
@@ -29,6 +31,8 @@ public class JumpSearchDemo {
         return -1;
     }
 
+    
+    /*Ausgabe*/
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int[] array = {3, 8, 12, 17, 21, 25, 31, 40};
