@@ -53,8 +53,3 @@ Dieses Repository dient zur Zusammenfassung und Vorbereitung auf die Klausur im 
 *(Hier kannst du eintragen, wie du deine Dateien im Repo abgelegt hast, z.B.:)*
 * `/src` - Java-Quellcode zu den Implementierungen von Sortieralgorithmen und Datenstrukturen.
 * `/docs` - Vorlesungsfolien, Mitschriften und Tracing-Beispiele.
-* `/tests` - (Optional) JUnit-Tests für die Algorithmen.
-
----
-
-**Viel Erfolg beim Lernen und bei der Klausur! 🚀**
