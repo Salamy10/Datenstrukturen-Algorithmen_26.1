@@ -3,10 +3,10 @@
 Dieses Repository dient zur Zusammenfassung und Vorbereitung auf die Klausur im Modul **Algorithmen und Datenstrukturen (AuD)**. Es enthält Implementierungen, Prinzipien und Notizen zu den prüfungsrelevanten Themen, die speziell auf die Anforderungen der Vorlesung zugeschnitten sind.
 
 ## 🎓 Kursinformationen
-* **Studiengang:** [Dein Studiengang, z. B. Informatik / Wirtschaftsinformatik]
-* **Semester:** [Dein Semester, z. B. 2. Semester]
-* **Dozent:** Julian [Nachname ggf. eintragen]
-* **Datum der Klausur:** [Klausurdatum eintragen]
+* **Studiengang:** Wirtschaftsinformatik
+* **Semester:** 2. Semester
+* **Dozent:** Julian
+* **Datum der Klausur:** Do., 17.09.2026
 
 ---
 
