@@ -9,18 +9,25 @@ public class BinarySearch {
 
     private static int binarySearch(int[] array, int value, int left, int right) {
         //Implementieren
-    	int pivotpos = (left + right)/2;
     	
-    	if(array[pivotpos] == value) {
-    		return pivotpos;
-    	}else if(array[pivotpos] < value){
-    		left = pivotpos + 1;
-    	}else if(array[pivotpos] > value){
-    		right = pivotpos - 1;
-    	}else {
-    		binarySearch(array, value);
+    	if(left>right) {
+        	return -1;
+        }
+    	
+    	int middle = (left + right)/2;
+    	
+    	if(array[middle] == value) {
+    		return middle;
     	}
-        return -1;
+    		
+    	if(value < array[middle]){
+    		binarySearch(array, value, left, middle - 1);
+    	}
+    	
+    	return binarySearch(array, value, middle+1, right);
+    	
+    	     
+        
     }
 
 }
