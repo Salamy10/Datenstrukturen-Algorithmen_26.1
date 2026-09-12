@@ -30,9 +30,6 @@ public class LinkedListIV_Int {
 	}
 	
 	public boolean contains(int value) {
-		if(head == null) {
-			return false;
-		}
 		
 		Node current = head;
 		
