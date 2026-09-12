@@ -2,6 +2,17 @@ package LinkedList;
 
 public class LinkedList<E> {
 
+	public class Node<E> {
+
+	    E data;
+	    Node<E> next;
+
+	    public Node(E data){
+	        this.data = data;
+	        this.next = null;
+	    }
+	}
+	
     private Node<E> head;
 
     public LinkedList() {
