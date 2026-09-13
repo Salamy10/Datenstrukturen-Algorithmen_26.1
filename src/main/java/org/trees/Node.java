@@ -1,6 +1,6 @@
 package org.trees;
 
-public class Node<E> {
+public class Node {
 
     int data;
     Node left;

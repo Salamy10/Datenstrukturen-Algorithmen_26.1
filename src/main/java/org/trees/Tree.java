@@ -55,4 +55,24 @@ public class Tree {
     	
     	depthFirstSearch(node.right);
     }
+    
+    public void printDescending() {
+    	printDescending(root);
+    }
+
+    private void printDescending(Node node) {
+        // Rekursiven Ablauf
+    	
+    	if(node == null) {
+    		return;
+    	}
+    	
+    	printDescending(node.right);
+    	
+    	System.out.print(node.data + " ");
+    	
+    	printDescending(node.left);
+    	
+    	
+    }
 }

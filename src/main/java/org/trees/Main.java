@@ -18,5 +18,7 @@ public class Main {
         tree.add(80);
 
         tree.depthFirstSearch();
+        System.out.println();
+        tree.printDescending();
     }
 }
