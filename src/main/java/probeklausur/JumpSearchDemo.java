@@ -6,36 +6,39 @@ public class JumpSearchDemo {
 
 	
 	/*Suchalgo*/
-    public static int jumpSearch(int[] array, int gesucht) {
-        int n = array.length;
-        if (n == 0) return -1;
+	public static int jumpSearch(int[] array, int gesucht) {
+	    int n = array.length;
+	    if (n == 0) return -1;
 
-        int schrittweite = (int) Math.sqrt(n);
-        int start = 0;
-        int ende = schrittweite;
+	    int schrittweite = (int) Math.sqrt(n);
+	    int start = 0;
+	    int ende = schrittweite;
 
-        // 1. Sprungphase: Bereich eingrenzen
-        while (ende < n && array[ende - 1] < gesucht) {
-            start = ende;
-            ende += schrittweite;
-        }
+	    // 1. Sprünge durchführen: 
+	    // Vergleiche den WERT im Array (array[ende - 1]) mit gesucht
+	    while (ende < n && array[ende - 1] < gesucht) {
+	        start = ende;
+	        ende += schrittweite;
+	    }
 
-        // 2. Lineare Suche im gefundenen Bereich
-        int rechteGrenze = Math.min(ende, n);
-        for (int i = start; i < rechteGrenze; i++) {
-            if (array[i] == gesucht) {
-                return i;
-            }
-        }
+	    // 2. Ende auf die tatsächliche Array-Länge begrenzen
+	    int echtesEnde = Math.min(ende, n);
 
-        return -1;
-    }
+	    // 3. Lineare Suche vorwärts von start bis echtesEnde - 1
+	    for (int i = start; i < echtesEnde; i++) {
+	        if (array[i] == gesucht) {
+	            return i;
+	        }
+	    }
+
+	    return -1;
+	}
 
     
     /*Ausgabe*/
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int[] array = {3, 8, 12, 17, 21, 25, 31, 40};
+        int[] array = {2, 5, 8, 12, 16, 21, 27, 31, 38, 45, 51, 60};
         
         
 
@@ -44,6 +47,6 @@ public class JumpSearchDemo {
         int gesucht = s.nextInt();
         int index = jumpSearch(array, gesucht);
         System.out.println("Gesuchter Wert: " + gesucht);
-        System.out.println("Gefunden an Index: " + index);
+        System.out.println("Gefunden an Index: " + index + " an " + (index+1) + ". Stelle.");
     }
 }
