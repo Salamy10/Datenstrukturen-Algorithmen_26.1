@@ -23,7 +23,7 @@ Dieses Repository dient zur Zusammenfassung und Vorbereitung auf die Klausur im 
 ### 2. Algorithmen (Sortieren & Suchen)
 * **Lineare Sortier- und Suchalgorithmen:**
   * **Anforderung:** Prinzip verstanden haben und Code schreiben können.
-  * **Behandelte Algos:** BubbleSort, InsertionSort, SelectionSort sowie Jump Search.
+  * **Behandelte Algos:** InsertionSort, SelectionSort sowie Jump Search.
 * **Rekursive Sortieralgorithmen:**
   * **Anforderung:** Prinzip und manueller Ablauf (Tracing) müssen sitzen.
   * *Hinweis:* Rekursives BubbleSort ist nicht relevant.
